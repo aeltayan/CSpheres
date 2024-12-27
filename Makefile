@@ -3,27 +3,13 @@ CC = gcc
 CFLAGS = -Wall -Werror -std=c99
 
 # Executables
-all: MS1_assg MS2_assg FS_assg
-
-MS1_assg: src/assg_ms1.o src/vector.o src/spheres.o src/color.o
-	$(CC) $(CFLAGS) src/assg_ms1.o src/vector.o src/spheres.o src/color.o -o MS1_assg -lm
-
-MS2_assg: src/assg_ms2.o src/vector.o src/spheres.o src/color.o
-	@echo "Linking MS2_assg"
-	$(CC) $(CFLAGS) src/assg_ms2.o src/vector.o src/spheres.o src/color.o -o MS2_assg -lm
+all: FS_assg
 
 FS_assg: src/assg_fs.o src/vector.o src/spheres.o src/color.o
 	@echo "Linking FS_assg"
 	$(CC) $(CFLAGS) src/assg_fs.o src/vector.o src/spheres.o src/color.o -o FS_assg -lm
 
 # Object files with specific macros
-src/assg_ms1.o: src/assg.c src/vector.h src/spheres.h
-	@echo "Compiling assg.c with MS1"
-	$(CC) $(CFLAGS) -DMS1 -c src/assg.c -o src/assg_ms1.o
-
-src/assg_ms2.o: src/assg.c src/vector.h src/spheres.h
-	@echo "Compiling assg.c with MS2"
-	$(CC) $(CFLAGS) -DMS2 -c src/assg.c -o src/assg_ms2.o
 
 src/assg_fs.o: src/assg.c src/vector.h src/spheres.h
 	@echo "Compiling assg.c with FS"

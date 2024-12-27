@@ -1,0 +1,12 @@
+<image width (int)> <image height (int)>
+<viewport height (float)>
+<focal length (float)>
+<light position (3float)> <light brightness (float)>
+<number of colors `m` (int)>
+<color 1 (HEX)> <color 2 (HEX)> ... <color m (HEX)>
+<background color index (int)>
+<number of spheres `n` (int)>
+<sphere 1 position (3float)> <sphere 1 radius (float)> <sphere 1 color index (int)>
+<sphere 2 position (3float)> <sphere 2 radius (float)> <sphere 2 color index (int)>
+...
+<sphere n position (3float)> <sphere n radius (float)> <sphere n color index (int)>
