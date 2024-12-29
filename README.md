@@ -92,7 +92,7 @@ This will compile the program and create an executable named `FS_assg`.
 Run the program by specifying the input file:
 
 ```bash
-./FS_assg <input_file> <render.ppm>
+./FS_assg <input_file.txt> <render.ppm>
 ```
 The rendered image will be saved as `render.ppm` in the same directory.
 
