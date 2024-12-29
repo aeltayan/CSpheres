@@ -109,7 +109,4 @@ The rendered image will be saved as `render.ppm` in the same directory.
 - If the input file is malformed, the program may terminate unexpectedly or produce incorrect results.
 - Adjust the Makefile as needed if using a different compiler or setup.
 
-## Contact
-
-For any issues or questions, please open a ticket in the repository or contact the developer directly.
 
