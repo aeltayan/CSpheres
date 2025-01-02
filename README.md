@@ -109,4 +109,7 @@ The rendered image will be saved as `render.ppm` in the same directory.
 - If the input file is malformed, the program may terminate unexpectedly or produce incorrect results.
 - Adjust the Makefile as needed if using a different compiler or setup.
 
+## Example Render
+![Alt text](image_url)
+![Example Render](https://github.com/aeltayan/CSpheres/blob/main/assets/examplerender.png)
 
